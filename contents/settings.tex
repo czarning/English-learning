@@ -1,0 +1,44 @@
+% !Mode:: "TeX:UTF-8"
+\usepackage{comment}            %块注释
+\usepackage{indentfirst}         %首行缩进
+\usepackage{type1cm}          %控制字体大小
+\usepackage{color, xcolor}    %支持彩色文本、底色、文本框等
+\usepackage{bbding}                  % 一些特殊符号
+
+\usepackage{makeidx}                 % 建立索引
+
+\usepackage{listings}                % 粘贴源代码
+\lstloadlanguages{}                  % 所要粘贴代码的编程语言
+\lstset{language=,tabsize=4, keepspaces=true,
+    xleftmargin=2em,xrightmargin=2em, aboveskip=1em,
+    backgroundcolor=\color{lightgray},    % 定义背景颜色
+    frame=none,                      % 表示不要边框
+    keywordstyle=\color{blue}\bfseries,
+    breakindent=22pt,
+    numbers=left,stepnumber=1,numberstyle=\tiny,
+    basicstyle=\footnotesize,
+    showspaces=false,
+    flexiblecolumns=true,
+    breaklines=true, breakautoindent=true,breakindent=4em,
+    escapeinside={/*@}{@*/}
+}
+
+%%%%%%%%%% 数学符号公式 %%%%%%%%%%
+\usepackage{latexsym}
+\usepackage{amsmath}                 % AMS LaTeX宏包
+\usepackage{amssymb}                 % 用来排版漂亮的数学公式
+\usepackage{amsbsy}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}                % 英文花体字体
+\usepackage{bm}                      % 数学公式中的黑斜体
+\usepackage{relsize}                 % 调整公式字体大小:\mathsmaller, \mathlarger
+\usepackage{caption2}                % 浮动图形和表格标题样式
+
+\ctexset{
+	section = {
+		name = {第,节},
+		format = \Large\bfseries\raggedright
+	},
+}
+\makeindex    % 生成索引
